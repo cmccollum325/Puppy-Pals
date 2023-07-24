@@ -25,10 +25,12 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  /* display: flex; */
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/28/19/15/background-2691002_1280.jpg');
+  background-size: cover;
 }
 
 h1 {
@@ -67,3 +69,60 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+div {
+  /* background-color: white; */
+  color: black;
+  display: flex;
+  position: relative; 
+}
+
+.header{
+  display: flex;
+  position: fixed;
+  top: 1vh;
+  font-weight: bolder;
+  font-size: x-large;
+ left: 40%;
+ right: auto;
+}
+
+.App{
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  justify-content: space-evenly;
+  flex-direction: row;
+  left: 5vw;
+  right: 5vw;
+  top: 5em;
+}
+.names{
+  font-weight: bold;
+  border: solid;
+  background-color: rgb(12, 68, 12);
+  margin-right: 1em;
+  padding: 1em;
+  box-shadow: 0 16px 32px 0 rgb(53, 53, 53);
+  border-radius: 5px;
+}
+.pupDetails{
+   font-size: larger;
+  /* border: solid black; */
+  border-radius: 5px;
+  background-color: rgb(12, 68, 12);
+  box-shadow: 0 16px 32px 0 rgb(53, 53, 53);
+  transition: 0.3s;
+  display: flexbox;
+  position: fixed;
+  top: 30%;
+  bottom: 30%;
+  left: 20%;
+  right: 20%;
+  padding: 10em;
+  align-items: center;
+  justify-content: center;
+  text-shadow: whitesmoke;
+  flex-direction: column;
+}
+

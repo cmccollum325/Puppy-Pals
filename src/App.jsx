@@ -17,24 +17,28 @@ function App () {
   
    return (
     <>
+      <div className='header'>
+        <h2 className='title'> The Puppies!</h2>
+      </div>
       <div className='App'>
         {
           puppies.map((puppy) => {
           return (
-          <p onClick={()=>{console.log( 
+          <p className='names' onClick={()=>{console.log( 
             setFeatPupId(puppy.id))}} key={puppy.id}>{puppy.name}</p>
           );
         })}
-        {featPupId && (
-        <div>
-        <h2>{featuredPup.name}</h2>
-        <ul>
+       
+      </div>
+      {featPupId && (
+        <div className='pupDetails'>
+        <h2 className='headPup'>{featuredPup.name}</h2>
+        <ul className='details'>
           <li>Age: {featuredPup.age}</li>
           <li>Email: {featuredPup.email}</li>
         </ul>
       </div>
-    )}
-      </div>
+      )}
     </>
   )
       }
